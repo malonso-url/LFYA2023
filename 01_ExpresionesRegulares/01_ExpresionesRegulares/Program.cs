@@ -13,7 +13,7 @@ namespace _01_ExpresionesRegulares
                 opt = Console.ReadLine();
 
                 if (!opt.Equals("0")) {
-                    if (Regex.IsMatch(opt, "^(([a-zA-Z0-9]|_|\\.)+@([a-zA-Z0-9]|\\.)+\\.([a-zA-Z0-9])+)$"))
+                    if (Regex.IsMatch(opt, "^([a-z]|[A-Z]|[0-9])+((\\.|_)?([a-z]|[A-Z]|[0-9])+)*@([a-z]|[A-Z]|[0-9])+(\\.([a-z]|[A-Z])+)+$"))
                     {
                         Console.WriteLine("Si es un correo electronico");
                     }
